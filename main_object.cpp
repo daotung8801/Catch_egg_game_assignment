@@ -35,5 +35,4 @@ void BASKET::move() {
         mPosX -= mVelX;
         main_object_rect.x=mPosX;
     }
-    cout<<mVelX<<endl;
 }

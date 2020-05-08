@@ -1,7 +1,7 @@
 #include "thread_object.h"
 
 EGG::EGG() {
-    x=rand()%800+100,y=80;
+    x=rand()%840+100,y=80;
     speed_y=rand()%5+2;
     thread_rect.h=THREAD_HEIGHT;
     thread_rect.w=THREAD_WIDTH;
@@ -17,7 +17,7 @@ void EGG::egg_move(SDL_Rect main_rect) {
         miss_egg=1;
         }
         if(checkCollision(main_rect,thread_rect)) {point=1;}
-        x=rand()%800+140;
+        x=rand()%840+100;
         thread_rect.x=x;
         y=80;
         thread_rect.y=y;

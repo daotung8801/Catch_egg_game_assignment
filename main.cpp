@@ -91,6 +91,8 @@ int main(int argc,char* argv[]) {
         int life_point=3;
         int score_point=0;
         int miss_egg=0;
+	startTime=SDL_GetTicks();
+	    
         while(!quit) {
             //Condition to quit game
             while( SDL_PollEvent( &e ) != 0 ) {

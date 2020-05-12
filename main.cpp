@@ -121,7 +121,15 @@ int main(int argc,char* argv[]) {
             SDL_Rect special_egg_rect=special_egg_real.getThreadRect();
             SDL_Rect bomb_rect=bomb_real.getThreadRect();
             SDL_Rect bomb_rect2=bomb_real2.getThreadRect();
-
+	    
+	    //Moving
+            basket_real.move();
+            special_egg_real.egg_move(basketRect);
+            normal_egg1.egg_move(basketRect);
+            normal_egg2.egg_move(basketRect);
+            bomb_real.egg_move(basketRect);
+            bomb_real2.egg_move(basketRect);
+		
             //Music handling
             while(!stopMusic) {
                 if( Mix_PlayingMusic() == 0 ) {
@@ -152,14 +160,6 @@ int main(int argc,char* argv[]) {
             timeText.str( "" );
             timeText <<"Times: " <<(SDL_GetTicks() - startTime)/1000<<" s";
             time_text_texture.loadFromText(gFont,renderer,timeText.str().c_str(),textColor);
-
-            //Moving
-            basket_real.move();
-            special_egg_real.egg_move(basketRect);
-            normal_egg1.egg_move(basketRect);
-            normal_egg2.egg_move(basketRect);
-            bomb_real.egg_move(basketRect);
-            bomb_real2.egg_move(basketRect);
 
             //clear screen
             SDL_SetRenderDrawColor( renderer,255,255,255,255 );

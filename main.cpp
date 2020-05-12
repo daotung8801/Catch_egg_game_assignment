@@ -79,7 +79,6 @@ int main(int argc,char* argv[]) {
     waitUntilKeyPressed();
 
     while(!exit_programme) {
-        SDL_Rect basketRect;
         BASKET basket_real;
         EGG normal_egg1;
         EGG normal_egg2;
@@ -115,7 +114,7 @@ int main(int argc,char* argv[]) {
             }
 
             //Get Rect
-            basketRect=basket_real.getBasketRect();
+            SDL_Rect basketRect=basket_real.getBasketRect();
             SDL_Rect normal_eggRect1=normal_egg1.getThreadRect();
             SDL_Rect normal_eggRect2=normal_egg2.getThreadRect();
             SDL_Rect special_egg_rect=special_egg_real.getThreadRect();

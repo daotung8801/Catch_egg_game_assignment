@@ -275,8 +275,8 @@ void loadMedia() {
     fail_muic=Mix_LoadWAV( "Music/fail.wav" );
 }
 void close() {
-	//Free loaded images
-	basket.free();
+    //Free loaded images
+    basket.free();
     background.free();
     chicken.free();
     normal_egg.free();
@@ -309,15 +309,15 @@ void close() {
     egg_sound=NULL;
     egg_cracking=NULL;
     fail_muic=NULL;
-	//Destroy window
-	SDL_DestroyRenderer(renderer);
-	SDL_DestroyWindow(window);
-	window = NULL;
-	renderer = NULL;
-	//Quit SDL subsystems
-	TTF_Quit();
-	IMG_Quit();
-	SDL_Quit();
+    //Destroy window
+    SDL_DestroyRenderer(renderer);
+    SDL_DestroyWindow(window);
+    window = NULL;
+    renderer = NULL;
+    //Quit SDL subsystems
+    TTF_Quit();
+    IMG_Quit();
+    SDL_Quit();
 }
 void waitUntilKeyPressed() {
     while (true) {

@@ -1,5 +1,5 @@
-#ifndef THREAD_OBJECT_H
-#define THREAD_OBJECT_H
+#ifndef THREAT_OBJECT_H
+#define THREAT_OBJECT_H
 
 #include "Base_object.h"
 

@@ -1,7 +1,7 @@
 #include "SDL_util.h"
 #include "Base_object.h"
 #include "main_object.h"
-#include "thread_object.h"
+#include "threat_object.h"
 
 //Screen variable
 const int SCREEN_WIDTH = 1000;

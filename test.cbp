@@ -38,8 +38,8 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="main_object.cpp" />
 		<Unit filename="main_object.h" />
-		<Unit filename="thread_object.cpp" />
-		<Unit filename="thread_object.h" />
+		<Unit filename="threat_object.cpp" />
+		<Unit filename="threat_object.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
